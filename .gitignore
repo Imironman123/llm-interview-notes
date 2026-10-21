@@ -1,0 +1,12 @@
+# Windows / Office 临时文件
+~$*.docx
+~$*.xlsx
+Thumbs.db
+desktop.ini
+
+# macOS
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
