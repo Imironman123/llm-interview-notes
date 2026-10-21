@@ -10,3 +10,8 @@ desktop.ini
 # 编辑器
 .vscode/
 .idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
