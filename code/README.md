@@ -20,6 +20,8 @@ python code/run_all_tests.py               # 跑全部
 
 ## 目录
 
+### 模型与推理
+
 | 文件 | 内容 | 面试频率 |
 |---|---|---|
 | [attention/self_attention.py](attention/self_attention.py) | 缩放点积注意力 + causal mask | ★★★★★ |
@@ -34,6 +36,15 @@ python code/run_all_tests.py               # 跑全部
 | [loss/dpo.py](loss/dpo.py) | DPO loss 与梯度直觉 | ★★★☆☆ |
 | [loss/grpo.py](loss/grpo.py) | GRPO 组内归一化优势 | ★★★★☆ |
 | [tokenizer/bpe.py](tokenizer/bpe.py) | BPE 合并训练 | ★★★☆☆ |
+
+### Agent 工程
+
+| 文件 | 内容 | 面试频率 |
+|---|---|---|
+| [agent/react_loop.py](agent/react_loop.py) | 最小 ReAct：循环检测、预算守卫、优雅降级 | ★★★★☆ |
+| [agent/tool_layer.py](agent/tool_layer.py) | 错误分类重试、幂等键推导、熔断状态机 | ★★★★☆ |
+| [agent/context_budget.py](agent/context_budget.py) | token 预算分配、水位触发压缩 | ★★★☆☆ |
+| [agent/judge_calibration.py](agent/judge_calibration.py) | Cohen's kappa、类别不平衡陷阱、位置偏差检测 | ★★★☆☆ |
 
 ## 使用建议
 
