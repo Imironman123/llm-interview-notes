@@ -37,6 +37,16 @@ python code/run_all_tests.py               # 跑全部
 | [loss/grpo.py](loss/grpo.py) | GRPO 组内归一化优势 | ★★★★☆ |
 | [tokenizer/bpe.py](tokenizer/bpe.py) | BPE 合并训练 | ★★★☆☆ |
 
+### 模型压缩
+
+| 文件 | 内容 | 面试频率 |
+|---|---|---|
+| [compression/quantize.py](compression/quantize.py) | 对称/非对称、per-tensor/channel/group、误差上界 | ★★★★★ |
+| [compression/gptq.py](compression/gptq.py) | Hessian 误差补偿，对比 RTN 的输出误差 | ★★★★★ |
+| [compression/wanda.py](compression/wanda.py) | 激活感知剪枝、2:4 掩码约束 | ★★★★☆ |
+| [compression/smoothquant.py](compression/smoothquant.py) | 激活 outlier 迁移，α=0.5 的平衡推导 | ★★★★☆ |
+| [compression/kd_loss.py](compression/kd_loss.py) | Forward/Reverse KL、JSD、T² 梯度验证 | ★★★★☆ |
+
 ### Agent 工程
 
 | 文件 | 内容 | 面试频率 |
